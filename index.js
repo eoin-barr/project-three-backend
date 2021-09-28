@@ -20,6 +20,7 @@ async function startServer() {
     console.log('🔌 Mongoose is connected')
     app.listen(port, () => console.log(`🎧 Listening on Port: ${port}`))
   } catch (err) {
+    console.log(err)
     console.log('💔 Oh no something went wrong')
   }
 }
